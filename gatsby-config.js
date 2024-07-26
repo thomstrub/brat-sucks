@@ -24,5 +24,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "www.psps.club",
+        protocol: "https",
+        hostname: "www.psps.club",
+      },
+    },
+    
   ],
 }
