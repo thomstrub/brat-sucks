@@ -7,9 +7,11 @@ import constants from '../constants/constants';
 import calculateResults from '../helper/calculate';
 import ToggleContainer from '../components/toggles/toggleContainer';
 import ResultsMiniSection from '../components/resultMiniSection/resultsMiniSection';
+import BratHeader from '../components/BratHeader/BratHeader';
+import UnderConstruction from '../components/UnderConstruction/UnderConstruction';
 
 
-export default function Calculator() {
+export default function MainPage() {
 const millimeters = constants.units.millimeters.variable;
 const inches = constants.units.inches.variable;
     // state setup 
@@ -123,13 +125,10 @@ const inches = constants.units.inches.variable;
             <div style={{display: "flex", width:"100%", maxWidth: "95%", margin: "0 auto",justifyContent: "center"}}>
                 <Container>
                     <div style={{marginTop: "40px", display: "flex", alignSelf: "center", justifyContent: "center"}}>
-                        <h1 style={{fontWeight: "800", fontSize: "36px", lineHeight: "42px"}}>Pinhole Calculator</h1>
+                        <h2 style={{fontWeight: "800", fontSize: "36px", lineHeight: "42px"}}>Welcome to My Homepage</h2>
                     </div>
-                    <InputSection handleInputChange={handleInputChange} inputs={state.inputs} handleUnitToggle={handleUnitToggle}/>
-                    {/* <div style={{width: "100%", height: "4px", background: "#D9D9D9"}}></div>
-                    <h3 style={{marginTop: "24px", fontSize: "20px", fontWeight: "700", lineHeight: "23px"}}>Results</h3> */}
-                    <ResultsMiniSection fStop={state.results.fStop} angleOfView={state.results.angleOfView}/>
-                    <ResultsSection results={state.results} handleUnitToggle={handleUnitToggle}/>
+                    <BratHeader/>
+                    <UnderConstruction />
                 </Container>
             </div>
     </main>

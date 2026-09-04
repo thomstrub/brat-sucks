@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Puget Sound Pinhole Society`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `BRAT RULeS YOU DRoOL`,
+    siteUrl: `https://www.bratsucks.com`,
   },
   plugins: [
     {
@@ -27,9 +27,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "www.psps.club",
+        bucketName: "bratsucks.com",
         protocol: "https",
-        hostname: "www.psps.club",
+        hostname: "bratsucks.com",
       },
     },
     

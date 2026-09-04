@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Calculator from "./calculator";
+import MainPage from "./mainpage";
 // import "../components/styles/styles.css";
 
 const pageStyles = {
@@ -42,11 +42,11 @@ function handleTabletChange(e) {
 }
   return (
     <main style={pageStyles}>
-      {isDesktop ? <div style={{display: 'flex', justifyContent: 'center'}}><div style={{width: "800px"}}><Calculator/></div></div>: <Calculator/>}
+      {isDesktop ? <div style={{display: 'flex', justifyContent: 'center'}}><div style={{width: "800px"}}><MainPage/></div></div>: <MainPage/>}
     </main>
   )
 }
 
 export default IndexPage
 
-export const Head = () => <title>PSPS</title>
+export const Head = () => <title>BRAT RULES YOU DROOL</title>
